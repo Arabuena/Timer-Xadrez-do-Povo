@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Xadrez do Povo</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#22223B">
+</head>
+<body>
+        <audio id="pauseSound" src="pause.mp3" preload="auto"></audio>
+    <div class="chess-timer-vertical">
+        <button class="timer-btn green" id="btn1">
+            <span class="timer" id="timer1">05:00</span>
+        </button>
+        <div class="center-bar">
+            <div class="logo-row">
+                <div class="time-input-row">
+                    <label for="startTime">Tempo (min):</label>
+                    <input type="number" id="startTime" min="1" max="99" value="5" style="width:50px;">
+                </div>
+                <img src="logo.jpeg" alt="Logo" class="logo">
+                <button id="startStopBtn" class="start-stop" title="Iniciar/Pausar"><span id="startStopIcon">⏵</span></button>
+            </div>
+        </div>
+        <button class="timer-btn yellow upside-down" id="btn2">
+            <span class="timer" id="timer2">05:00</span>
+        </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
