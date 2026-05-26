@@ -29,13 +29,39 @@
 }
 .time-input-row {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2px;
     color: #fff;
     font-size: 1.1rem;
-    min-width: 120px;
+    min-width: 70px;
+}
+.input-label {
+    margin-bottom: 2px;
+    font-size: 0.95em;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+/* Rodapé discreto */
+.footer {
+    width: 100vw;
+    text-align: center;
+    font-size: 0.85em;
+    color: #bbb;
+    background: none;
+    position: fixed;
+    bottom: 4px;
+    left: 0;
+    z-index: 10;
+    letter-spacing: 0.03em;
+    pointer-events: none;
+}
+.footer a {
+    color: #bbb;
+    text-decoration: underline dotted;
+    pointer-events: auto;
 }
 .time-input-row input[type="number"] {
     font-size: 1.1rem;
@@ -85,19 +111,21 @@ body, html {
     color: #222;
 }
 .timer {
-    font-size: 5vw;
+    font-size: 12vw;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 .center-bar {
     background: #111;
     width: 100vw;
-    min-height: 120px;
-    height: 34vh;
+    min-height: 48px;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 .logo {
@@ -133,14 +161,14 @@ body, html {
 }
 @media (max-width: 900px) {
     .center-bar {
-        min-height: 80px;
-        height: 34vh;
+        min-height: 32px;
+        height: 10vh;
     }
     .logo {
         max-width: 80px;
         width: 80px;
     }
     .timer {
-        font-size: 7vw;
+        font-size: 10vw;
     }
 }
