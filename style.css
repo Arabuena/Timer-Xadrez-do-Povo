@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 18px;
+    margin-bottom: 0;
+    height: 100%;
 }
 .start-stop {
     display: flex;
@@ -111,10 +112,11 @@ body, html {
     color: #222;
 }
 .timer {
-    font-size: 12vw;
+    font-size: 16vw;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     letter-spacing: 0.1em;
+    line-height: 1.1;
 }
 .center-bar {
     background: #111;
@@ -129,10 +131,11 @@ body, html {
     box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 .logo {
-    width: 120px;
-    max-width: 180px;
+    width: 90px;
+    max-width: 120px;
     border-radius: 8px;
-    margin-bottom: 16px;
+    margin: 0 12px;
+    align-self: center;
 }
 .upside-down {
     /* Removido para não rotacionar o botão inteiro */
@@ -165,10 +168,10 @@ body, html {
         height: 10vh;
     }
     .logo {
-        max-width: 80px;
-        width: 80px;
+        max-width: 70px;
+        width: 70px;
     }
     .timer {
-        font-size: 10vw;
+        font-size: 22vw;
     }
 }

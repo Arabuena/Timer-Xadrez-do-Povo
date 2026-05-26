@@ -1,5 +1,3 @@
-
-
 let timer1 = 5 * 60;
 let timer2 = 5 * 60;
 let active = null; // 'p1' ou 'p2'
@@ -27,6 +25,7 @@ function resetTimers() {
     btn1.disabled = true;
     btn2.disabled = true;
     if (interval) clearInterval(interval);
+    // Corrige bug do ícone: só mostra play (⏵) ou pause (⏸)
     startStopIcon.textContent = '⏵';
 }
 
