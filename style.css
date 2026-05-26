@@ -114,7 +114,7 @@ body, html {
 .timer {
     font-size: 16vw;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.1;
 }
