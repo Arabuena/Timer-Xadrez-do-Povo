@@ -173,5 +173,7 @@ body, html {
     }
     .timer {
         font-size: 22vw;
+        font-weight: 900;
+        text-shadow: 1px 0 0 #222, -1px 0 0 #222, 0 1px 0 #222, 0 -1px 0 #222, 1px 1px 0 #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222;
     }
 }

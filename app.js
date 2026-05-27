@@ -134,6 +134,9 @@ startStopBtn.addEventListener('click', () => {
         // Retomar
         paused = false;
         startStopIcon.textContent = '⏸';
+        // Habilita apenas o botão do jogador ativo
+        btn1.disabled = active !== 'p1';
+        btn2.disabled = active !== 'p2';
         interval = setInterval(() => {
             if (active === 'p1') {
                 if (timer1 > 0) {
